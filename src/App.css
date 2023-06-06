@@ -4,4 +4,108 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'NTR', sans-serif;
+    color: #000000;
+}
+
+
+
+/* CSS New for Navbar */
+
+
+.navbar {
+  position: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 46px;
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 60px;
+}
+
+.download-button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 0px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  margin-right: 60px;
+
+}
+.button-text{
+  font-size: 17px;
+  font-family: "NTR";
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.sections-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+#home {
+  background-color: red;
+}
+
+#about {
+  background-color: blue;
+}
+
+#contact {
+  background-color: green;
+}
+
+.sections-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
