@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import SelfAwarenessTest from "./pages/SelfAwarenessTest";
 import './App.css';
 import logo from "./assets/logo.png";
+import Hero from "./pages/Hero";
+import Carousel from "./pages/Carousel";
 
 const App = () => {
   const scrollToSection = (sectionId, event) => {
@@ -41,18 +43,10 @@ const App = () => {
         
       <div className="sections-container">
         <section id="hero" className="section">
-          <motion.h1
-            initial={{ opacity: 0.5, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 2 }}
-            transition={{
-              delay: 0.5,
-              type: "spring",
-              damping: 10,
-              stiffness: 100
-            }}
-          >
-            Hero.jsx
-          </motion.h1>
+          <Hero/>
+        </section>
+        <section id="carousel" className="section">
+          <Carousel/>
         </section>
         <section id="manifesto" className="section">
           <motion.h1
@@ -66,6 +60,7 @@ const App = () => {
         <section id="test" className="section">
           <SelfAwarenessTest />
         </section>
+      
         <section id="workwithus" className="section">
           <motion.h1
             initial={{ opacity: 0.5, scale: 0 }}

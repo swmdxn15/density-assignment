@@ -8,13 +8,10 @@ body{
 }
 
 
-
 /* CSS New for Navbar */
-
-
 .navbar {
   position: fixed;
-  height: 100px;
+  height: 90px;
   top: 0;
   left: 0;
   width: 100%;
@@ -23,7 +20,7 @@ body{
   display: flex;
   align-items: center;
   color: #000000;
-
+  
 }
 
 .navbar-left {
@@ -80,12 +77,14 @@ a {
 }
 
 .sections-container {
+  border: 10px solid green;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .section {
+  border: 7px solid blue;
   height: 100vh;
   scroll-snap-align: start;
   display: flex;
@@ -94,18 +93,20 @@ a {
   font-size: 24px;
 }
 
-#home {
-  background-color: red;
+/* #hero {
+  background-color: ;
 }
 
-#about {
-  background-color: blue;
+#manifesto {
+  background-color: ;
 }
+#carousel{
+  background-color: ;
+} */
 
-#contact {
-  background-color: green;
-}
+
 
 .sections-container::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
 }
+

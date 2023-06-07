@@ -1,0 +1,36 @@
+/* hero */
+#hero .main-container{
+  /* border: 7px solid black; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+#hero .main-container-item{
+  /* border: 2px solid black; */
+  background-color: #EFECFE;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1500px;
+  height: 600px;
+  border-radius: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+ #hero .left-section{
+  border: 2px solid yellow;
+  margin-right: 200px;
+}
+
+#hero .right-section{
+  border: 2px solid blue;
+  margin-left:200px;
+}
+#hero h1{
+ font-size: 60px;
+}
