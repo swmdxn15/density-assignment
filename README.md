@@ -2,6 +2,13 @@
 
 This is a nice animated website built using React and several animation libraries like Framer Motion and React Lottie.
 
+## Screenshots 
+
+<img width="1440" alt="Screenshot 2023-06-13 at 11 05 56 PM" src="https://github.com/swmdxn15/density-assignment/assets/86848961/2f7efbcb-a3cc-4727-b907-e99378b58af8">
+
+<img width="1440" alt="Screenshot 2023-06-13 at 11 06 07 PM" src="https://github.com/swmdxn15/density-assignment/assets/86848961/6acbe1a6-c1d4-46e9-a396-5e1768a9bd21">
+<img width="1440" alt="Screenshot 2023-06-13 at 11 06 16 PM" src="https://github.com/swmdxn15/density-assignment/assets/86848961/7152e194-2c3a-49c2-ad24-accea5eb08dd">
+
 ## Features
 
 - Smooth animations powered by Framer Motion.
