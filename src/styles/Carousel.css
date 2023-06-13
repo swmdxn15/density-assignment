@@ -1,56 +1,161 @@
 #carousel .main-container{
-    border: 5px solid black;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-#carousel .section-one{
-    border: 2px solid yellow;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 16px;
-    width: 100%;
-    margin-top: 40px;
-}
-#carousel .one{
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-#carousel .two{
-    border: 2px solid black;
-
-}
- #carousel .three{
-    border: 2px solid black;
-
-}
-#carousel .section-two{
-    border: 2px solid pink;
-    width: 100%;
-   
-
-}
-#carousel .section-two .cards{
-    border: 2px solid red;
+    /* border: 10px solid black; */
+    background-color: #ffffff;
+    /* height: 100%;
+    width: 100%; */
+    width:90%;
+    height: 82%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    border-radius: 30px;
 }
-#carousel .section-two .card{
-    background-color: rgb(151, 77, 221);
-    height: 200px;
-    width: 600px;
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 10px;
+
+
+/* section one */
+#carousel .section-one{
+    /* border: 5px solid yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 160px;
+}
+
+#carousel .section-one .one{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#carousel #leaves-logo{
+    position: relative;
+    bottom: 50px;
+}
+
+#carousel .section-one .one h2{ 
+    /* border: 3px solid beige; */
+  font-size: 35px;
+  position: relative;
+  bottom: 17px;
+}
+
+#carousel .section-one .two{
+    /* border: 2px solid black; */
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 1.5;
+}
+ #carousel .section-one .three{
+    /* border: 2px solid black; */
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 1.5;
+    position: relative;
+    right: 90px;
+    
+}
+
+
+/* section two */
+#carousel .section-two{
+    /* border: 8px solid rgb(34, 166, 122); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+#carousel .text-logo{
+    /* border: 4px solid violet; */
+    display: flex;
+    justify-content: flex-start;
+}
+#carousel .text-logo h1{
+    /* border: 2px solid red; */
+}
+
+
+/* cards main container */
+#carousel .section-two .cards-container{
+    /* border: 4px solid rgb(245, 113, 18); */
+}
+
+
+/* cards carousel starts from here */
+#carousel .carousel {
+	/* border: 2px solid red; */
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+
+#carousel .card {
+	flex: 0 0 auto;
+	width: 300px;
+	height: 200px;
+	margin-right: 25px;
+	background-color: #f0f0f0;
+	padding: 20px;
+	scroll-snap-align: start;
+    border-radius: 15px;
+}
+
+/* hide scrollbar */
+#carousel .carousel::-webkit-scrollbar {
+  display: none; 
+}
+#carousel .carousel::-webkit-scrollbar {
+	height: 3px;
+	background-color: transparent;
+	background-color: white;
+}
+
+#carousel .carousel::-webkit-scrollbar-thumb {
+	background: rebeccapurple;
+	border-radius: 10px;
+}
+
+#carousel .carousel::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+#carousel p{
+    font-size: 17px;
+    line-height: 1.2;
+    opacity: 0.6;
+}
+#carousel h4{
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+#carousel .card h2{
+    font-size: 35px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+#carousel .section-two .text-logo h1{
+    /* border: 2px solid blue; */
+    position: relative;
+    left: 10px;
+    top: 40px;
+    margin-bottom: 30px;
+    font-size: 45px;
+    line-height: none;
+    font-weight: 1000;
+}
+
+#carousel .section-two .jelly-logo{
+     position: relative;
+     left: 0px;
+     top: 35px;
 }

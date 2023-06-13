@@ -1,10 +1,16 @@
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
+import Lottie from "lottie-react";
 import SelfAwarenessTest from "./pages/SelfAwarenessTest";
 import './App.css';
-import logo from "./assets/logo.png";
+
+// import logo from "./assets/logo.png";
+import boyWorkingLogo from "./assets/boy-working-on-laptop-lottie-animation.json";
 import Hero from "./pages/Hero";
 import Carousel from "./pages/Carousel";
+import MeetAhead from "./pages/MeetAhead";
+import WorkWithUs from "./pages/WorkWithUs";
+
 
 const App = () => {
   const scrollToSection = (sectionId, event) => {
@@ -12,13 +18,16 @@ const App = () => {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: "smooth" });
   };
- 
-
   return (
     <div>
      <nav className="navbar">
         <div className="navbar-left">
-          <img src={logo} alt="Logo" className="logo" />
+          {/* <img src={logo} alt="Logo" className="logo" /> */}
+          <Lottie
+                style={{ width: '120px', height: '120px', marginLeft:"45px"}}
+                animationData={boyWorkingLogo}
+                loop={false}
+              />
         </div>
         <ul className="navbar-list">
           <li>
@@ -49,31 +58,19 @@ const App = () => {
           <Carousel/>
         </section>
         <section id="manifesto" className="section">
-          <motion.h1
-            initial={{ opacity: 0.5, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 2 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
-          >
-            manifesto
-          </motion.h1>
+           <MeetAhead/>
         </section>
         <section id="test" className="section">
           <SelfAwarenessTest />
         </section>
       
         <section id="workwithus" className="section">
-          <motion.h1
-            initial={{ opacity: 0.5, scale: 0 }}
-            whileInView={{
-              opacity: 1,
-              scale: 2
-             
-            }}
-            transition={{ delay: 0.5, duration: 0.51 }}
-          >
-            workwithus.jsx
-          </motion.h1>
+          <WorkWithUs/>
         </section>
+
+        {/* <section id="open-vacancies" className="section">
+          <OpenVacancies/>
+        </section> */}
         
       </div>
     </div>

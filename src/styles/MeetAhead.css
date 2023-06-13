@@ -1,0 +1,61 @@
+#manifesto .main-container{
+    /* border: 12px solid pink; */
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#manifesto .main-container-item{
+    /* border: 10px solid blue; */
+    background-color: #FEF7F0;
+    border-radius: 30px;
+    width:95%;
+    height: 82%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+#manifesto .left-section{
+    /* border: 5px solid yellow; */
+    width: 50%;
+    position: relative;
+    left: 20px;
+}
+#manifesto .right-section{
+    /* border: 5px solid yellow; */
+    position: relative;
+    right: 150px;
+    margin-top: 100px;
+    
+}
+#manifesto h4{
+    line-height: 1;
+    /* border: 2px solid violet; */
+    position: relative;
+    top: 70px;
+}
+#manifesto h2{
+    /* border: 2px solid violet; */
+    line-height: 1;
+    position: relative;
+    top: 70px;
+}
+#manifesto h4{
+    opacity: 0.6;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+#manifesto h2{
+    font-size: 60px;
+}
+#manifesto .right-section h5{
+    line-height: 1.4;
+    opacity: 0.5;
+    font-size: 21px;
+}

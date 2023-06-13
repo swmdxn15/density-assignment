@@ -76,15 +76,18 @@ a {
   cursor: pointer;
 }
 
+
+/* sections */
+
 .sections-container {
-  border: 10px solid green;
+  /* border: 10px solid green; */
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .section {
-  border: 7px solid blue;
+  /* border: 7px solid blue; */
   height: 100vh;
   scroll-snap-align: start;
   display: flex;
@@ -93,20 +96,9 @@ a {
   font-size: 24px;
 }
 
-/* #hero {
-  background-color: ;
-}
-
-#manifesto {
-  background-color: ;
-}
-#carousel{
-  background-color: ;
-} */
-
 
 
 .sections-container::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none; 
 }
 
